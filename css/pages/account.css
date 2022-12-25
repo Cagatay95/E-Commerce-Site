@@ -1,0 +1,53 @@
+.container .account-wrapper {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  gap: 100px;
+}
+.account-column {
+  flex: 1;
+}
+.account-column h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.acount-column form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-top: 10px;
+}
+.account-column form div label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  row-gap: 5px;
+}
+.account-column form .remember {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.account-column form .required {
+  color: red;
+  font-weight: bold;
+}
+.account-column form .remember button {
+  background-color: red;
+  color: white;
+  border-color: red;
+  margin-top: 10px;
+}
+.account-column form .form-link {
+  color: #e51414;
+  font-size: 14px;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .account-wrapper {
+    flex-direction: column;
+  }
+}

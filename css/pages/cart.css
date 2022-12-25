@@ -1,0 +1,191 @@
+.cart-page {
+  margin: 30px 0;
+}
+.cart-page-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ! cart - form - start */
+.cart-page .cart-form {
+  flex-basis: 60%;
+}
+/* ! progres start */
+.cart-form .free-progres-bar {
+  border: 1px solid #dee0ea;
+  padding: 20px;
+  width: 100%;
+}
+.cart-form .progres-bar-title {
+  font-size: 12px;
+}
+.cart-form .progres-bar-title strong {
+  color: red;
+}
+.cart-page .progres-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #dee0ea;
+  border-radius: 10px;
+  margin-top: 8px;
+  position: relative;
+}
+.cart-page .progres-bar .progres {
+  background-color: red;
+  width: 30%;
+  height: 6px;
+  position: absolute;
+  display: inline-block;
+  border-radius: 10px;
+}
+/* ! progres end */
+
+/* ! table Start  */
+.cart-form table img {
+  width: 60px;
+}
+.cart-form table > :not(caption) > * > * {
+  padding: 8px 0;
+}
+.cart-form table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 14px;
+  min-width: 595px;
+}
+.cart-form .shop-table-wrapper {
+  overflow-x: auto;
+}
+.cart-form table thead th {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+.cart-wrapper .cart-item > td {
+  text-align: center;
+}
+
+.cart-form table tbody {
+  border-top: 1px solid #dee0ea;
+}
+.cart-form table tbody .cart-item {
+  border-bottom: 1px solid #dee0ea;
+}
+.cart-form table tbody .cart-image {
+  position: relative;
+}
+.cart-form tbody i {
+  position: absolute;
+  top: 2px;
+  left: -6px;
+  background-color: red;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+
+/* ! table End */
+/* ! actions start */
+.action-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+.action-wrapper .coupon {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.action-wrapper .coupon button {
+  background-color: black;
+  color: white;
+}
+.action-wrapper .coupon input {
+  height: 100%;
+}
+.action-wrapper .update-cart button {
+  background-color: red;
+  color: white;
+  border-color: white;
+}
+
+/* ! actions end */
+/* ! collaterals start */
+.cart-collaterals {
+  flex: 0 0 300px;
+  border: 1px solid #dee0ea;
+  padding: 30px;
+}
+.cart-collaterals table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.cart-collaterals h2 {
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dee0ea;
+}
+.cart-collaterals table td,
+.cart-collaterals table th {
+  font-size: 14px;
+  font-weight: 400;
+}
+.cart-collaterals table tr:not(:last-child) {
+  border-bottom: 1px solid #dee0ea;
+}
+.cart-collaterals table th {
+  text-align: start;
+  padding: 20px 0 10px 0;
+}
+.cart-collaterals table td {
+  text-align: end;
+  padding: 20px 0 10px 0;
+}
+.cart-collaterals table ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.cart-collaterals table ul label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 5px;
+}
+.cart-collaterals table ul a {
+  color: red;
+  font-weight: 500;
+}
+.cart-collaterals table strong {
+  font-size: 18px;
+  font-weight: 7000;
+}
+.cart-collaterals button {
+  margin-top: 30px;
+  width: 100%;
+  color: white;
+  border-color: white;
+  background-color: red;
+}
+
+/* ! collaterals end */
+
+/* ! cart - form - end */
+
+/* ! responsive  */
+@media (max-width: 800px) {
+  .cart-page-wrapper {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}

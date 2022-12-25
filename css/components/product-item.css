@@ -1,0 +1,132 @@
+.products .product-item {
+  text-align: center;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 1;
+}
+.products .product-item .product-image {
+  width: 100%;
+  height: 100%;
+}
+
+.products .product-item img {
+  width: 100%;
+  transition: 0.5s ease all;
+}
+.products .product-item .img1:hover {
+  visibility: hidden;
+  opacity: 0;
+}
+.products .product-item .product-image:hover .img2 {
+  visibility: visible;
+  opacity: 1;
+}
+.products .product-item .img2 {
+  display: flex;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.products .product-item .product-title {
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+.products .product-item .product-star {
+  color: gold;
+  display: flex;
+  margin: 8px 0;
+  column-gap: 2px;
+  justify-content: center;
+}
+.products .product-item .product-prices {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  justify-content: center;
+}
+.products .product-item .product-prices strong {
+  color: red;
+  font-weight: 500;
+}
+.products .product-item .product-prices span {
+  color: #7d7d7d;
+  font-size: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: line-through;
+}
+.products .product-discount {
+  display: inline-block;
+  align-items: center;
+  display: flex;
+  font-weight: 500;
+  top: 5px;
+  right: 5px;
+  font-size: 12px;
+  justify-content: center;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: red;
+  position: absolute;
+}
+.product-item .product-links {
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: 5px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease all;
+}
+.products .product-item:hover .product-links {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(10px);
+}
+
+.product-item .product-links a,
+.product-item .product-links button {
+  background-color: black;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 4px;
+  transition: all ease 0.3s;
+}
+
+
+.product-item .product-links a:hover,
+.product-item .product-links button:hover {
+  opacity: 0.7;
+}
+.product-item .product-links i {
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  pointer-events: none;
+}
+.product-wrapper {
+  position: relative;
+}
+.product-wrapper .glide__arrow {
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+}
+.product-wrapper .glide__arrow--left {
+  left: -40px;
+}
+.product-wrapper .glide__arrow--right {
+  right: -40px;
+}
+.product-wrapper .glide__arrow i {
+  font-size: 40px;
+}
